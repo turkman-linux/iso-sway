@@ -16,7 +16,7 @@ function build(){
     cd ..
     rm -rf $variant$suffix
 }
-for variant in x11; do
+for variant in sway; do
     for fw in 0 1 ; do
         export FIRMWARE=""
         suffix=""
