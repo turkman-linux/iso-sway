@@ -19,5 +19,6 @@ rc-update add elogind
 rc-update add eudev
 rc-update add seatd
 rc-update add devfs
+rc-update add udhcpc
 ymp clean --allow-oem
 exit 0
