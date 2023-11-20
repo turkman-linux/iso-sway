@@ -5,7 +5,7 @@ ymp it shadow sway foot dejavu eudev elogind freetype seatd xkeyboard-config @x1
 # TODO: sway dependency
 ymp it pango xcb-util-renderutil libbsd libXfont2 libmd brotli gdk-pixbuf --no-emerge --allow-oem
 # weston for debug
-ymp it weston --no-emerge --allow-oem
+#ymp it weston --no-emerge --allow-oem
 # enable login from shadow
 sed -i "s|#agetty_options.*|agetty_options=\" -l /usr/bin/login\"|" /etc/conf.d/agetty
 # set language
