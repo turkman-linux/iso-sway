@@ -13,6 +13,7 @@ function build(){
     fi
     bash -ex mkiso.sh
     mv turkman.iso /output/turkman-$variant$suffix.iso
+    chroot rootfs ymp rbd --no-color 2>/dev/null | tee /output/turkman-$variant$suffix.revdep-rebuild
     cd ..
     rm -rf $variant$suffix
 }
